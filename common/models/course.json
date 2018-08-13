@@ -1,31 +1,37 @@
 {
-  "name": "Instructor",
-  "plural": "Instructors",
+  "name": "Course",
+  "plural": "Courses",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true,
-    "caseSensitiveEmail": true
+    "validateUpsert": true
   },
   "properties": {
     "name": {
       "type": "string",
       "required": true
     },
-    "email": {
-      "type": "string",
-      "required": true
-    },
-    "bio": {
+    "description": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "courses": {
+    "instructor": {
+      "type": "belongsTo",
+      "model": "Instructor",
+      "foreignKey": ""
+    },
+    "courseRatings": {
       "type": "hasMany",
-      "model": "Course",
-      "foreignKey": "instructorId"
+      "model": "CourseRating",
+      "foreignKey": ""
+    },
+    "students": {
+      "type": "hasMany",
+      "model": "Student",
+      "foreignKey": "studentId",
+      "through": "Registration"
     }
   },
   "acls": [

@@ -47,5 +47,21 @@
   "Instructor": {
     "dataSource": "db",
     "public": true
+  },
+  "Course": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CourseRating": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Registration": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "filestore-mongo",
+    "public": true
   }
 }

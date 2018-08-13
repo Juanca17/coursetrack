@@ -1,6 +1,14 @@
 {
   "db": {
+    "url": "mongodb://admin:admin1234@ds017886.mlab.com:17886/coursetrack",
+    "database": "coursetrack",
     "name": "db",
-    "connector": "memory"
+    "connector": "mongodb"
+  },
+  "filestore-mongo": {
+    "url": "mongodb://admin:admin1234@ds017886.mlab.com:17886/coursetrack",
+    "database": "coursetrack",
+    "name": "filestore-mongo",
+    "connector": "loopback-component-storage-mongo"
   }
 }
