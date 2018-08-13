@@ -9,7 +9,7 @@ Juan Carlos Sanchez Cruz
 ```
 git clone https://github.com/Juanca17/coursetrack.git
 cd coursetrack
-npm start
+npm install
 ```
 
 ### Run the api explorer
