@@ -38,7 +38,7 @@
     },
     {
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "student",
       "permission": "ALLOW",
       "property": "register"
     }
