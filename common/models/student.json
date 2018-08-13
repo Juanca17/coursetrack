@@ -35,7 +35,38 @@
       "principalType": "ROLE",
       "principalId": "admin",
       "permission": "ALLOW"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "register"
     }
   ],
-  "methods": {}
+  "methods": {
+    "register": {
+      "accepts": [
+        {
+          "arg": "courseId",
+          "type": "string",
+          "required": true,
+          "description": "Course to register the Student into."
+        }
+      ],
+      "returns": [
+        {
+          "arg": "registered",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "description": "Register Student to a Course.",
+      "http": [
+        {
+          "path": "/register",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }
